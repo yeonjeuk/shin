@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+.sub-main {}
+.sub-main .visual {
+  width: 100%;
+  height: 500px;
+  padding-top: 226px;
+  background: url(/shin/img/sub-visual.jpg) no-repeat center center;
+}
+.sub-main .inner {
+  position: relative;
+}
+.sub-main .sec-header {
+  text-align: center;
+}
+.sub-main .sec-header .sec-tit {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120px;
+  color: #111;
+}
+/* info - S - */
+.info {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 457px;
+}
+.info .inner {}
+.info .info-inner {
+  float: left;
+  width: 386px;
+  height: 320px;
+  background-color: #f6f6f6;
+  padding: 40px 0 0 40px;
+  position: relative;
+}
+.info .info-inner + .info-inner {
+  border-left: 1px solid #e5e5e5;
+}
+.info .info-tit {
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  line-height: 60px;
+  color: #999;
+  text-indent: 40px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+.info .info-tit li {
+  float: left;
+}
+.info .info-tit li:first-child {
+  color: #fff;
+  text-decoration: underline #bea36b;
+}
+.info .info-tit li a {
+  transition: all 0.3s;
+}
+.info .info-day {}
+.info .info-day h4 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #333;
+  padding-bottom: 120px;
+}
+.info .info-day p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #555;
+}
+.info .info-day figure {
+  position: absolute;
+  left: 40px;
+  top: 185px;
+}
+.info .info-day figure img {
+  padding-right: 40px;
+}
+.info .info-day figure span {
+  font-size: 28px;
+  line-height: 45px;
+}
+.info .info-day a {
+  font-size: 14px;
+  color: #777;
+  border-bottom: 1px solid #777;
+  position: absolute;
+  left: 330px;
+  top: 44px;
+}
+.info .info-day a::after {
+  content: url(/shin/img/sub-d-i.png);
+  margin-left: 7px;
+}
+.info .info-icon {
+  float: left;
+  padding-right: 10px;
+}
+.info .info-icon li {
+  padding-top: 10px;
+}
+.info .info-icon li:nth-child(1) {
+  padding-bottom: 22px;
+}
+.info .info-icon li:nth-child(4) {
+  padding-bottom: 6px
+}
+.info .info-time {
+  padding-bottom: 25px;
+}
+.info .info-time li {
+  font-size: 14px;
+  line-height: 30px;
+  color: #555;
+}
+.info .info-time li p {}
+.info .info-time li:first-child {
+  padding-bottom: 20px;
+}
+.info .info-time li:last-child {
+  line-height: 21px;
+  padding-top: 9px;
+}
+.info .info-link {
+  display: block;
+  width: 328px;
+  height: 43px;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border: 1px solid #b7b7b7;
+}
+.info .calender-tit {
+  float: left;
+  font-family: 'Garamond', sans-serif
+}
+.info .calender-tit li {
+  width: 32px;
+  font-weight: 600;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+.info .calender-tit li:nth-child(2) {
+  font-size: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+}
+.info .calender-tit li:nth-child(3) {
+  font-size: 20px;
+  color: #777;
+  padding-top: 22px;
+}
+.info .calender-tit li:nth-child(3) a::after {
+  content: url(/shin/img/sub-info-c-t-i.png);
+  margin-left: 5px;
+}
+.info .flr {
+  float: right;
+  width: 255px;
+  margin-right: 40px;
+}
+.info .flr li {
+  float: left;
+  text-align: center;
+}
+
+.info .week li {
+  width: 12px;
+  font-family: 'Garamond', sans-serif;
+  font-size: 14px;
+  padding: 0 12px 14px;
+}
+.info .week li:first-child {
+  color: #f00;
+}
+.info .calender-list li {
+  width: 14px;
+  font-size: 12px;
+  color: #777;
+  padding: 11px;
+}
+.info .calender-list .late {
+  color: #fff;
+  background: url(/shin/img/sub-info-late.png) no-repeat center center;
+}
+.info .calender-list .academy-late {
+  color: #fff;
+  background: url(/shin/img/sub-info-aca-late.png) no-repeat center center;
+}
+.info .calender-list .today {
+  background: url(/shin/img/sub-info-today.png) no-repeat center center;
+}
+.info .calender-list .holiday {
+  color: #fff;
+  background: url(/shin/img/sub-info-holi.png) no-repeat center center;
+}
+.info .calender-add {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  position: absolute;
+  right: 45px;
+  bottom: 45px;
+}
+.info .calender-add li {
+  float: left;
+  height: 25px;
+  padding-left: 30px;
+}
+.info .calender-add li::before {
+  content: "";
+  display: block;
+  margin: -12px -15px;
+  width: 9px;
+  height: 9px;
+  background-image: url(/shin/img/sub-info-add-icon.png);
+}
+.info .info-add {
+  float: right;
+}
+.info .info-add li {
+  float: left;
+  font-size: 12px;
+  color: #777;
+  text-indent: 5px;
+  padding-top: 20px;
+}
+.info .info-add li a {
+  border-bottom: 1px solid #777;
+}
+.info .info-add li + li::before {
+  content: "/";
+  margin-right: 5px;
+}
+
+.info .info-add li:last-child a {
+  border: none;
+}
+.info .calender-add li:nth-child(2)::before {
+  background-position: -9px 0;
+}
+.info .calender-add li:nth-child(3)::before {
+  background-position: -18px 0;
+}
+.info .calender-add li:nth-child(4)::before {
+  background-position: -27px 0;
+}
+.info .info-tit li a:hover {
+  color: #fff;
+}
+.info .info-link:hover {
+  background-color: #e5e5e5;
+}
+
+/* info - E - */
+
+/* article - S - */
+.article {
+  height: 320px;
+  padding-top: 385px;
+}
+
+.article a {
+  float: left;
+  width: 400px;
+  height: 200px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  background: url(/shin/img/sub-art-1.jpg) no-repeat;
+  padding-bottom: 120px;
+
+}
+.article a:nth-child(2) {
+  background-image: url(/shin/img/sub-art-2.jpg);
+}
+.article a:nth-child(3) {
+  background-image: url(/shin/img/sub-art-3.jpg);
+}
+.article a + a {
+  margin-left: 40px;
+}
+.article a p {
+  margin: 42px 0 0 30px;
+}
+/* article - E - */
+
+/* art&culture - S - */
+.artculture {}
+.artculture .sec-header {
+  padding-top: 59px;
+  border-top: 1px solid #e5e5e5;
+}
+.artculture .inner .ac-wrap {
+  float: left;
+  padding-bottom: 145px;
+}
+.ac-wrap .ac-list {
+  float: left;
+  width: 400px;
+  position: relative;
+}
+.ac-wrap .ac-list + .ac-list {
+  margin-left: 40px;
+}
+.ac-wrap .ac-list a {}
+.ac-wrap .ac-list .ac-txt {
+  padding-top: 418px;
+}
+.ac-wrap .ac-list:last-child .ac-txt {
+  padding-top: 286px;
+}
+.ac-wrap .ac-list .ac-txt h4 {
+  font-size: 15px;
+  line-height: 50px;
+  color: #877251;
+}
+.ac-wrap .ac-list .ac-txt p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+}
+.ac-wrap .ac-list:last-child p {
+  line-height: 56px;
+}
+.ac-wrap .ac-list .ac-txt .ac-day {
+  font-size: 14px;
+  color: #777;
+}
+.ac-wrap .ac-list a figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.ac-wrap .ac-list a figure img {
+  transition: all 0.3s;
+}
+
+.ac-wrap .ac-list a:hover figure {
+  background-color: #000;
+}
+.ac-wrap .ac-list a:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+/* art&culture - E - */
+
+/* road - S - */
+.road {
+  background-color: #f6f6f6;
+  padding-bottom: 200px;
+}
+.road .road-wrap {
+  width: 100%;
+  float: left;
+}
+.road .inner .sec-header .sec-tit {
+  padding-top: 80px;
+}
+.road .road-wrap .road-tit {
+  width: 100%;
+  font-size: 22px;
+  color: #777;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.road .road-wrap .road-tit a {
+  transition: all 0.3s;
+}
+.road .road-wrap .road-tit a:first-child {
+  color: #333;
+  border-bottom: 2px solid #f00;
+}
+.road .road-wrap .road-tit a + a {
+  margin-left: 40px;
+}
+.road .road-wrap .road-map {
+  float: left;
+  position: relative;
+}
+.road .road-wrap .road-map .road-map-txt {
+  width: 578px;
+  height: 61px;
+  font-size: 14px;
+  line-height: 61px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 401px 30px 0;
+}
+.road-map .road-map-txt a {
+  float: right;
+}
+.road-map .road-map-txt a::after {
+  content: url(/shin/img/sub-map-a-i.png);
+  margin-left: 10px;
+}
+.road-map .road-map-txt p::before {
+  content: url(/shin/img/sub-map-p-i.png);
+  margin-right: 10px;
+}
+.road-map figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.road .road-wrap .road-parking {
+  float: right;
+  width: 560px;
+}
+.road-parking h4 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #333;
+}
+.road-parking span {
+  font-size: 14px;
+  line-height: 33px;
+  color: #555;
+}
+.road-parking p {
+  font-size: 12px;
+  color: #777;
+}
+.road-parking li span::before {
+  content: url(/shin/img/sub-parking-i.png);
+  margin-right: 5px;
+}
+.road-parking .bb {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.parking-guide {
+  padding-bottom: 15px;
+}
+.parking-guide li h4 {
+  padding-bottom: 15px;
+}
+.parking-guide li p {
+  line-height: 33px;
+}
+.parking-guide li p::before {
+  content: "*";
+  margin-right: 5px;
+}
+
+.parking-charge {
+  padding-bottom: 24px;
+}
+.parking-charge li h4 {
+  padding: 24px 0 17px;
+}
+
+.parking-nav {
+  padding: 22px 0 39px;
+}
+.parking-nav h4 {
+  float: left;
+  line-height: 21px;
+  padding-right: 110px;
+}
+.parking-nav p {
+  float: left;
+}
+
+.parking-nav2 {
+  padding: 25px 0 42px;
+}
+.parking-nav2 h4 {
+  float: left;
+  padding-right: 55px;
+}
+.parking-nav2 p {
+  float: left;
+}
+
+.road .road-wrap .road-tit a:hover {
+  color: #333;
+}
+/* road - E - */

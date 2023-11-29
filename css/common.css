@@ -1,0 +1,514 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/*   font-family: 'Noto Sans KR'; */
+
+/* common - S - 모든 페이지에 공통으로 삽입(적용)되는 속성*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font: 16px/1.2 'Noto Sans KR', dotom, sans-serif;
+  letter-spacing: -1px;
+}
+.skip-nav a {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #f90;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: 10000;
+}
+.skip-nav a:focus {
+  top: 0;
+}
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+  /* block 가운데 정렬 */
+}
+.hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  position: absolute;
+  left: -9999px
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrap {
+  position: relative;
+}
+
+
+/* common - E -*/
+
+/************
+HEADER - S - 
+************/
+
+.header {
+  width: 100%;
+  min-width: 1280px;
+  height: 112px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #f0f0f0;
+}
+.top {
+  display: block;
+  height: 42px;
+  font-size: 12px;
+  line-height: 42px;
+  text-align: right;
+  color: #999;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+.top-menu {
+  float: right;
+}
+.top-menu li {
+  float: left;
+  margin-right: 3px;
+}
+.top-menu li a::after {
+  content: "·";
+  margin: 0 8px;
+}
+.top-menu li:first-child {
+  color: #333;
+}
+.top-menu li:last-child a::after {
+  content: "|";
+  margin: 0 25px;
+}
+.top .top-link {
+  float: right;
+}
+.top .top-link a {
+  color: #333;
+}
+.top .top-link a::before {
+  content: url(/shin/img/link-logo.png);
+  margin-right: 5px;
+}
+.logo {
+  float: left;
+  margin: 23px 50px 0 0;
+}
+.logo a {
+  display: block;
+  width: 200px;
+  height: 23px;
+  text-indent: -9999px;
+  background-image: url(/shin/img/logo.jpg);
+}
+.gnb {
+  float: left;
+}
+.gnb .depth1 {
+  float: left;
+  width: 109px;
+}
+.gnb .depth1 > a {
+  display: block;
+  height: 69px;
+  padding: 0px 10px;
+  font-size: 15px;
+  line-height: 69px;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+.gnb .depth1 > a::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f00;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+.gnb .depth2 {
+  display: none;
+  padding-top: 40px;
+  position: relative;
+  z-index: 10;
+}
+.gnb .depth2 li {}
+.gnb .depth2 li a {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333;
+}
+.gnb::after {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 113px;
+}
+.gnb a:hover {
+  color: #f00;
+}
+.gnb:hover::after {
+  display: block;
+}
+.gnb:hover .depth2 {
+  display: block;
+}
+.gnb .depth1:hover > a::after {
+  opacity: 1;
+}
+
+
+.util {
+  width: 100%;
+}
+.login {
+  font-size: 12px;
+}
+.login .login-wrap fieldset {
+  border-bottom: 1px solid #e5e5e5;
+}
+.login .login-btn {
+  height: 69px;
+  background-color: #fff;
+  border: none;
+  float: right;
+}
+.login .login-box {
+  display: none;
+  width: 100%;
+  height: 469px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 112px;
+}
+.login .login-box .inner {
+  position: relative;
+}
+.login .login-box .login-tit {
+  display: block;
+  font-family: 'garamond', sans-serif;
+  font-size: 15px;
+  line-height: 64px;
+  color: #a48443;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.login .login-box .login-wrap {
+  width: 445px;
+  margin: 0 auto;
+}
+.login .login-box .login-form {
+  width: 100%;
+}
+.login .login-box .login-form fieldset {
+  position: relative;
+}
+
+.login .login-wrap .bg {
+  width: 325px;
+  font-size: 15px;
+  line-height: 50px;
+  text-indent: 50px;
+  border-radius: 5px;
+}
+.login .login-wrap .id {
+  margin-bottom: 10px;
+  background: #e5e5e5 url(/shin/img/login1.png) no-repeat 20px center;
+}
+.login .login-wrap .pw {
+  margin-bottom: 15px;
+  background: #e5e5e5 url(/shin/img/login2.png) no-repeat 20px center;
+}
+.login .login-wrap .checkbox {
+  float: left;
+  font-size: 12px;
+  color: #555;
+  padding: 0 0 40px 10px;
+}
+.login .login-wrap .checkbox label {
+  padding-left: 7px;
+}
+.login .login-box .login-form .login-app {
+  float: right;
+}
+.login .login-box .login-form .login-app button {
+  width: 110px;
+  height: 110px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  background: #333;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.login .login-box .login-form .login-app div {
+  font-size: 12px;
+  color: #555;
+  padding-right: 126px;
+}
+.login .login-box .login-form .login-app div a span + span::before {
+  content: "/";
+  margin: 0 5px 0 3px;
+}
+.login .login-box .login-desc {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999;
+  padding-top: 18px;
+}
+.login .login-box .login-desc p {}
+.login .login-box .login-desc a {
+  display: block;
+  font-size: 14px;
+  color: #8b714c;
+  padding-top: 15px;
+}
+.login .login-box .login-desc a span {
+  border-bottom: 1px solid #8b714c;
+}
+.login .login-box .esc-btn button {
+  padding: 14px 18px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.login .login-box .esc-btn button span {
+  font-size: 16px;
+  color: #8b714c;
+  text-align: center;
+}
+.login:hover .login-box {
+  display: block;
+}
+.login .login-box .login-form .login-app button:hover {
+  background: #777;
+}
+.login .login-box .esc-btn:hover button {
+  background-color: #f5f5f5;
+}
+
+
+/************
+HEADER - E - 
+************/
+
+
+/**********
+FOOTER - S 
+**********/
+.footer {
+  width: 100%;
+  height: 310px;
+  /* position: absolute;left: 0;bottom: 0; */
+  background-color: #333;
+}
+.footer .inner {
+  padding-top: 50px;
+}
+.footer .f-top {
+  height: 70px;
+  padding-bottom: 50px;
+}
+.f-logo {
+  float: left;
+  width: 162px;
+  height: 40px;
+  margin: 0 43px 40px 0;
+}
+.f-logo img {}
+
+.f-menu {
+  width: 680px;
+  float: left;
+  margin-bottom: 15px;
+}
+.f-menu li {
+  float: left;
+  height: 20px;
+  padding: 0 12px;
+}
+
+.f-menu li a {
+  display: block;
+  font-size: 14px;
+  line-height: 25px;
+  color: #999;
+  transition: all 0.3s;
+}
+.f-menu .f-red a {
+  color: #f00;
+}
+
+
+.f-box {
+  float: right;
+}
+.f-box .f-sns {
+  margin-bottom: 15px;
+}
+.f-box .f-sns li {
+  float: left;
+}
+.f-box .f-sns li + li {
+  margin-left: 25px;
+}
+.f-box .f-sns li a {
+  display: block;
+  height: 16px;
+  text-indent: -9999px;
+  background-image: url(/shin/img/f-logo.png);
+  transition: all 0.3s;
+}
+.f-box .f-sns li:nth-child(1) a {
+  width: 10px;
+}
+.f-box .f-sns li:nth-child(2) a {
+  width: 8px;
+  background-position: -20px 0;
+}
+.f-box .f-sns li:nth-child(3) a {
+  width: 16px;
+  background-position: -39px 0;
+}
+.f-box .f-sns li:nth-child(4) a {
+  width: 16px;
+  background-position: -65px 0;
+}
+.f-box .f-sns li:nth-child(5) a {
+  width: 11px;
+  background-position: -91px 0;
+}
+.f-family {
+  float: right;
+  position: relative;
+}
+.f-family .f-family-tit {
+  width: 120px;
+  height: 30px;
+  border-bottom: 1px solid #828282;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px;
+  color: #999;
+
+}
+.f-family .f-family-box {
+  display: none;
+
+  border: 1px solid #828282;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  bottom: 31px;
+}
+.f-family .f-family-box li {
+  font-size: 12px;
+  line-height: 32px;
+  color: #999;
+}
+.f-family .f-family-box li a {
+  display: block;
+}
+
+.f-family .f-family-tit::after {
+  content: url(/shin/img/f-f-icon.png);
+  margin-left: 40px;
+}
+
+
+.footer .f-bot {
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+.f-contents {
+  float: left;
+  width: 600px;
+}
+.f-contents .f-contens-addr {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #777;
+}
+.f-contents .f-contens-addr li {
+  float: left;
+}
+.f-contents .f-contens-addr li address {
+  display: inline-block;
+}
+.f-contents .f-contens-addr li:nth-child(2)::after {
+  content: "|";
+  margin: 0 5px;
+}
+.f-contents .f-contens-addr li:nth-child(2)::before {
+  content: "|";
+  margin: 0 5px;
+}
+.f-contents .f-contens-addr li a {}
+.f-contents .f-contens-copy {
+  float: left;
+  font-size: 12px;
+  line-height: 22px;
+  color: #555;
+}
+
+.f-family:hover .f-family-tit {
+  width: 160px;
+  text-indent: 18px;
+  border: 1px solid #828282;
+}
+.f-family:hover .f-family-tit::after {
+  content: url(/shin./img/f-f-h-icon.png);
+}
+.f-family:hover .f-family-box {
+  display: block;
+  width: 160px;
+  text-indent: 18px;
+}
+.f-menu li a:hover {
+  color: #fff;
+}
+.f-menu .f-red a:hover {
+  color: #f00;
+}
+.f-box .f-sns li a:hover {
+  background-image: url(/shin/img/F-LOGO-h.png)
+}
+/**********
+FOOTER - E 
+**********/

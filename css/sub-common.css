@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/*   font-family: 'Noto Sans KR'; */
+
+/* common - S - 모든 페이지에 공통으로 삽입(적용)되는 속성*/
+a {text-decoration: none; color: inherit;}
+body{ font:16px/1.2 'Noto Sans KR' , dotom , sans-serif; letter-spacing: -1px;}
+.skip-nav a{
+  width: 100%;height: 30px;
+  line-height: 30px; color: #fff; text-align: center;
+  background-color: #f90;
+  position: absolute;left: 0;top: -100px; z-index: 10000;
+}
+.skip-nav a:focus{top: 0;}
+.inner {
+  width: 1280px;
+  margin: 0 auto;/* block 가운데 정렬 */
+}
+.hide {
+  width: 0;height: 0;overflow: hidden;
+  font-size: 0; line-height: 0;text-indent: -9999px;
+  position: absolute; left: -9999px
+}
+.clearfix::after {content: ""; clear: both; display: block;}
+.wrap{position: relative;}
+/* common - E -*/
